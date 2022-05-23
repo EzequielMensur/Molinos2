@@ -1,0 +1,87 @@
+{
+	"Caption": "Update Stock",
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/Molinos2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/Molinos2/Actions/Stock/Stock_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Caption": "LotSize",
+							"_Name": "LotSize",
+							"Value": "{LotSize}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MinStock",
+							"_Name": "MinStock",
+							"Value": "{MinStock}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/Molinos2/Services/MolinosTest_v2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
+							"Value": "{ProductId}",
+							"_Name": "ProductId",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsEditable": false
+						},
+						{
+							"Caption": "Quantity",
+							"_Name": "Quantity",
+							"Value": "{Quantity}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "QuantityLessMin",
+							"Caption": "QuantityLessMin",
+							"Value": "{QuantityLessMin}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "UpdatedTimestamp",
+							"Value": "{UpdatedTimestamp}",
+							"Caption": "UpdatedTimestamp",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Stock_Edit",
+	"PrefersLargeCaption": true
+}

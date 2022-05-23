@@ -1,0 +1,72 @@
+{
+	"Caption": "Update ProductCategory",
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/Molinos2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/Molinos2/Actions/ProductCategories/ProductCategories_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Caption": "Category",
+							"_Name": "Category",
+							"Value": "{Category}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "CategoryName",
+							"_Name": "CategoryName",
+							"Value": "{CategoryName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MainCategory",
+							"_Name": "MainCategory",
+							"Value": "{MainCategory}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MainCategoryName",
+							"_Name": "MainCategoryName",
+							"Value": "{MainCategoryName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NumberOfProducts",
+							"_Name": "NumberOfProducts",
+							"Value": "{NumberOfProducts}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "UpdatedTimestamp",
+							"Value": "{UpdatedTimestamp}",
+							"Caption": "UpdatedTimestamp",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductCategories_Edit",
+	"PrefersLargeCaption": true
+}

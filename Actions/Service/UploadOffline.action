@@ -1,0 +1,9 @@
+{
+    "Service": "/Molinos2/Services/MolinosTest_v2.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/Molinos2/Actions/Service/DownloadStartedMessage.action",
+    "OnFailure": "/Molinos2/Actions/Service/SyncFailureMessage.action"
+}

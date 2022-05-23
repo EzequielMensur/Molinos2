@@ -1,0 +1,142 @@
+{
+	"Controls": [
+		{
+			"DataSubscriptions": [
+				"SalesOrderItems"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{CreatedAt}",
+						"Footnote": "{CustomerId}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"HeadlineText": "{LifeCycleStatusName}",
+						"Tags": [
+						]
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{CreatedAt}",
+							"_Name": "KeyValue0",
+							"KeyName": "CreatedAt"
+						},
+						{
+							"Value": "{CurrencyCode}",
+							"_Name": "KeyValue1",
+							"KeyName": "CurrencyCode"
+						},
+						{
+							"Value": "{CustomerId}",
+							"_Name": "KeyValue2",
+							"KeyName": "CustomerId"
+						},
+						{
+							"Value": "{GrossAmount}",
+							"_Name": "KeyValue3",
+							"KeyName": "GrossAmount"
+						},
+						{
+							"Value": "{LifeCycleStatus}",
+							"_Name": "KeyValue4",
+							"KeyName": "LifeCycleStatus"
+						},
+						{
+							"Value": "{LifeCycleStatusName}",
+							"_Name": "KeyValue5",
+							"KeyName": "LifeCycleStatusName"
+						},
+						{
+							"Value": "{NetAmount}",
+							"_Name": "KeyValue6",
+							"KeyName": "NetAmount"
+						},
+						{
+							"Value": "{SalesOrderId}",
+							"_Name": "KeyValue7",
+							"KeyName": "SalesOrderId"
+						},
+						{
+							"Value": "{TaxAmount}",
+							"_Name": "KeyValue8",
+							"KeyName": "TaxAmount"
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true,
+						"Caption": "Items"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{#Property:@odata.readLink}/Items",
+						"Service": "/Molinos2/Services/MolinosTest_v2.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"Title": "{CurrencyCode}",
+						"Subhead": "{DeliveryDate}",
+						"Footnote": "{ItemNumber}",
+						"Description": "{GrossAmount}",
+						"StatusText": "{NetAmount}",
+						"SubstatusText": "{ProductId}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/Molinos2/Actions/SalesOrderItems/NavToSalesOrderItems_Detail.action",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Detail",
+	"Caption": "SalesOrderHeader",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "More",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/SalesOrderHeaders/SalesOrderHeaders_DetailPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

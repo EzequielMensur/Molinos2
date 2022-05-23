@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/Molinos2/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/Molinos2/Rules/PurchaseOrderHeaders/PurchaseOrderHeaders_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

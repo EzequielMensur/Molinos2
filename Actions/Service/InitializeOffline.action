@@ -1,0 +1,52 @@
+{
+    "Service": "/Molinos2/Services/MolinosTest_v2.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Suppliers",
+            "Query": "Suppliers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "ProductCategories",
+            "Query": "ProductCategories"
+        },
+        {
+            "Name": "ProductTexts",
+            "Query": "ProductTexts"
+        },
+        {
+            "Name": "Stock",
+            "Query": "Stock"
+        },
+        {
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/Molinos2/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/Molinos2/Actions/Service/InitializeOfflineFailureMessage.action"
+}

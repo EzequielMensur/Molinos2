@@ -1,0 +1,71 @@
+{
+	"Caption": "Update ProductText",
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/Molinos2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/Molinos2/Actions/ProductTexts/ProductTexts_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "",
+					"Controls": [
+						{
+							"Caption": "Id",
+							"_Name": "Id",
+							"Value": "{Id}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "Language",
+							"_Name": "Language",
+							"Value": "{Language}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LongDescription",
+							"_Name": "LongDescription",
+							"Value": "{LongDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Name",
+							"_Name": "Name",
+							"Value": "{Name}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductId",
+							"_Name": "ProductId",
+							"Value": "{ProductId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ShortDescription",
+							"_Name": "ShortDescription",
+							"Value": "{ShortDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "PageOneFormCell",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductTexts_Edit",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,103 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "CreatedAt",
+							"Caption": "CreatedAt",
+							"Mode": "Datetime"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "CurrencyCode",
+							"Caption": "CurrencyCode"
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "CustomerId",
+							"IsEditable": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "CustomerId",
+							"IsSelectedSectionEnabled": true,
+							"IsPickerDismissedOnSelection": true,
+							"PickerItems": {
+								"DisplayValue": "{CustomerId}",
+								"ReturnValue": "{CustomerId}",
+								"Target": {
+									"EntitySet": "Customers",
+									"Service": "/Molinos2/Services/MolinosTest_v2.service",
+									"UniqueIdType": "Integer"
+								}
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "GrossAmount",
+							"Caption": "GrossAmount",
+							"KeyboardType": "Number"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "LifeCycleStatus",
+							"Caption": "LifeCycleStatus"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "LifeCycleStatusName",
+							"Caption": "LifeCycleStatusName"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "NetAmount",
+							"Caption": "NetAmount",
+							"KeyboardType": "Number"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "SalesOrderId",
+							"Caption": "SalesOrderId"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "TaxAmount",
+							"Caption": "TaxAmount",
+							"KeyboardType": "Number"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_Create",
+	"Caption": "Create SalesOrderHeader",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/SalesOrderHeaders/SalesOrderHeaders_CreateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

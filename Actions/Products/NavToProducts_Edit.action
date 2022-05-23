@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/Molinos2/Pages/Products/Products_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

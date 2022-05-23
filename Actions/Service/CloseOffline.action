@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/Molinos2/Services/MolinosTest_v2.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/Molinos2/Actions/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/Molinos2/Actions/Service/CloseOfflineFailureMessage.action"
+}

@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add SalesOrderHeader",
+            "OnPress": "/Molinos2/Actions/Customers/NavToCustomers_CreateSalesOrderHeader.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/Molinos2/Rules/Customers/Customers_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

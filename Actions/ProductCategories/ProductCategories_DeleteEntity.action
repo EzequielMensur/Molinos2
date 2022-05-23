@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "ProductCategories",
+        "Service": "/Molinos2/Services/MolinosTest_v2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/Molinos2/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/Molinos2/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

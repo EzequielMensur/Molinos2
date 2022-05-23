@@ -1,0 +1,134 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "PageOneFormCell",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "{CurrencyCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "CurrencyCode",
+							"Caption": "CurrencyCode"
+						},
+						{
+							"Value": "{DeliveryDate}",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "DeliveryDate",
+							"Caption": "DeliveryDate",
+							"Mode": "Datetime"
+						},
+						{
+							"Value": "{GrossAmount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "GrossAmount",
+							"Caption": "GrossAmount",
+							"KeyboardType": "Number"
+						},
+						{
+							"Value": "{ItemNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "ItemNumber",
+							"IsEditable": false,
+							"Caption": "ItemNumber",
+							"KeyboardType": "Number"
+						},
+						{
+							"Value": "{NetAmount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "NetAmount",
+							"Caption": "NetAmount",
+							"KeyboardType": "Number"
+						},
+						{
+							"Value": "{ProductId}",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "ProductId",
+							"IsSelectedSectionEnabled": true,
+							"IsPickerDismissedOnSelection": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/Molinos2/Services/MolinosTest_v2.service",
+									"UniqueIdType": "Integer"
+								}
+							}
+						},
+						{
+							"Value": "{Quantity}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Quantity",
+							"Caption": "Quantity",
+							"KeyboardType": "Number"
+						},
+						{
+							"Value": "{QuantityUnit}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "QuantityUnit",
+							"Caption": "QuantityUnit"
+						},
+						{
+							"Value": "{SalesOrderId}",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "SalesOrderId",
+							"IsEditable": false,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "SalesOrderId",
+							"IsSelectedSectionEnabled": true,
+							"IsPickerDismissedOnSelection": true,
+							"PickerItems": {
+								"DisplayValue": "{SalesOrderId}",
+								"ReturnValue": "{SalesOrderId}",
+								"Target": {
+									"EntitySet": "SalesOrderHeaders",
+									"Service": "/Molinos2/Services/MolinosTest_v2.service",
+									"UniqueIdType": "Integer"
+								}
+							}
+						},
+						{
+							"Value": "{TaxAmount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "TaxAmount",
+							"Caption": "TaxAmount",
+							"KeyboardType": "Number"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderItems_Edit",
+	"Caption": "Update SalesOrderItem",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/SalesOrderItems/SalesOrderItems_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

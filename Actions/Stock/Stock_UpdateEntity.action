@@ -1,0 +1,22 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Stock",
+        "Service": "/Molinos2/Services/MolinosTest_v2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "LotSize": "#Control:LotSize/#Value",
+        "MinStock": "#Control:MinStock/#Value",
+        "ProductId": "#Control:ProductId/#SelectedValue",
+        "Quantity": "#Control:Quantity/#Value",
+        "QuantityLessMin": "#Control:QuantityLessMin/#Value",
+        "UpdatedTimestamp": "#Control:UpdatedTimestamp/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/Molinos2/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/Molinos2/Actions/UpdateEntityFailureMessage.action"
+}

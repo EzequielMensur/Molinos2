@@ -1,0 +1,47 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.us10.hana.ondemand.com",
+		"Organization": "da1699ff-2d04-4c45-ae92-335c3244f1f9",
+		"Space": "580d0746-837b-4196-b639-cbcddb3f4c6c",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "",
+				"URL": ""
+			},
+			"Destination": [
+				{
+					"CF": "",
+					"MDK": "MolinosTest.v2",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/da1699ff-2d04-4c45-ae92-335c3244f1f9/space/580d0746-837b-4196-b639-cbcddb3f4c6c",
+		"AppId": "com.sap.mdk.copiaMolinos",
+		"Destination": [
+			"com.sap.edm.sampleservice.v2",
+			"MolinosTest.v2"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.sap.mdk.copiaMolinos&ClientId=431e61b7-d799-4a62-b9b9-034c04636e39&ServerUrl=https://dev-mcyqio5c-dev-com-sap-mdk-copiamolinos.cfapps.us10.hana.ondemand.com&SapCloudPlatformEndpoint=https://dev-mcyqio5c-dev-com-sap-mdk-copiamolinos.cfapps.us10.hana.ondemand.com&AuthorizationEndpointUrl=https://dev-mcyqio5c-dev-com-sap-mdk-copiamolinos.cfapps.us10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://dev-mcyqio5c-dev-com-sap-mdk-copiamolinos.cfapps.us10.hana.ondemand.com&TokenUrl=https://dev-mcyqio5c-dev-com-sap-mdk-copiamolinos.cfapps.us10.hana.ondemand.com/oauth2/api/v1/token"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true
+	}
+}

@@ -1,0 +1,5 @@
+{
+    "_Type": "Action.Type.OpenDocument",
+    "Path": "/Molinos2/Services/MolinosTest_v2.service/{@odata.readLink}/$value",
+    "MimeType": "image/jpeg"
+}

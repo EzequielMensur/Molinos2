@@ -1,0 +1,81 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/Molinos2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/Molinos2/Actions/Stock/Stock_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create Stock",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "LotSize",
+							"KeyboardType": "Number",
+							"_Name": "LotSize",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MinStock",
+							"KeyboardType": "Number",
+							"_Name": "MinStock",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductId",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Name}",
+								"ReturnValue": "{ProductId}",
+								"Target": {
+									"EntitySet": "Products",
+									"Service": "/Molinos2/Services/MolinosTest_v2.service",
+									"UniqueIdType": "Integer"
+								}
+							},
+							"_Name": "ProductId",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Quantity",
+							"KeyboardType": "Number",
+							"_Name": "Quantity",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "QuantityLessMin",
+							"Caption": "QuantityLessMin",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "UpdatedTimestamp",
+							"Caption": "UpdatedTimestamp",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "FormCellContainer",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Stock_Create",
+	"PrefersLargeCaption": true
+}

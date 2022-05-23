@@ -1,0 +1,64 @@
+{
+	"Caption": "ProductCategories",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/Molinos2/Actions/ProductCategories/NavToProductCategories_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "{MainCategory}",
+						"DetailImage": "",
+						"DetailImageIsCircular": false,
+						"Icons": [],
+						"OnPress": "/Molinos2/Actions/ProductCategories/NavToProductCategories_Detail.action",
+						"StatusImage": "",
+						"Title": "{CategoryName}",
+						"Footnote": "{MainCategoryName}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{NumberOfProducts}",
+						"Subhead": "{Category}",
+						"SubstatusText": "{UpdatedTimestamp}"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "ProductCategories",
+						"Service": "/Molinos2/Services/MolinosTest_v2.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductCategories_List",
+	"PrefersLargeCaption": true
+}

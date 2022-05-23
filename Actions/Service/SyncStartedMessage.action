@@ -1,0 +1,8 @@
+{
+    "Message": "Upload in progress...",
+    "CompletionMessage": "Upload Successful",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/Molinos2/Actions/Service/UploadOffline.action",
+    "OnFailure": "/Molinos2/Actions/Service/SyncFailureMessage.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

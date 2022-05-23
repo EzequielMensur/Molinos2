@@ -1,0 +1,22 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "ProductTexts",
+        "Service": "/Molinos2/Services/MolinosTest_v2.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Id": "#Control:Id/#Value",
+        "Language": "#Control:Language/#Value",
+        "LongDescription": "#Control:LongDescription/#Value",
+        "Name": "#Control:Name/#Value",
+        "ProductId": "#Control:ProductId/#Value",
+        "ShortDescription": "#Control:ShortDescription/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/Molinos2/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/Molinos2/Actions/UpdateEntityFailureMessage.action"
+}

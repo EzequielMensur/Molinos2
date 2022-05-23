@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/Molinos2/Actions/Products/Products_OpenDocument.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/Molinos2/Rules/Products/Products_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

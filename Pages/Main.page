@@ -1,0 +1,25 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Image": "/Molinos2/Images/molinos.png",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
+	"PrefersLargeCaption": true
+}

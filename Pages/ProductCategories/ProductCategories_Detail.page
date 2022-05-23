@@ -1,0 +1,79 @@
+{
+	"Caption": "ProductCategory",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/Molinos2/Actions/ProductCategories/NavToProductCategories_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/Molinos2/Rules/ProductCategories/ProductCategories_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImage": "",
+						"HeadlineText": "{CategoryName}",
+						"Subhead": "{Category}",
+						"Tags": [],
+						"BodyText": "",
+						"Footnote": "{MainCategoryName}",
+						"Description": "{MainCategory}",
+						"StatusText": "{NumberOfProducts}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{UpdatedTimestamp}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{Category}"
+						},
+						{
+							"KeyName": "CategoryName",
+							"Value": "{CategoryName}"
+						},
+						{
+							"KeyName": "MainCategory",
+							"Value": "{MainCategory}"
+						},
+						{
+							"KeyName": "MainCategoryName",
+							"Value": "{MainCategoryName}"
+						},
+						{
+							"KeyName": "NumberOfProducts",
+							"Value": "{NumberOfProducts}"
+						},
+						{
+							"KeyName": "UpdatedTimestamp",
+							"Value": "{UpdatedTimestamp}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductCategories_Detail",
+	"PrefersLargeCaption": true
+}

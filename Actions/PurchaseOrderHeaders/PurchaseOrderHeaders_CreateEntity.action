@@ -1,0 +1,21 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/Molinos2/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/Molinos2/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "PurchaseOrderId": "#Control:PurchaseOrderId/#Value",
+        "SupplierId": "#Control:SupplierId/#SelectedValue",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "PurchaseOrderHeaders",
+        "Service": "/Molinos2/Services/MolinosTest_v2.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

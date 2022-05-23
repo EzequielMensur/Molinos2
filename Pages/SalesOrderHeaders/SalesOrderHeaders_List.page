@@ -1,0 +1,116 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Molinos2/Services/MolinosTest_v2.service",
+						"EntitySet": "/Molinos2/Rules/noSincronizadosSales.js"
+					},
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Title",
+						"Subhead": "Subhead",
+						"Footnote": "Footnote",
+						"Description": "Description",
+						"StatusText": "Status",
+						"SubstatusText": "Substatus",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": true,
+						"AccessoryType": "none",
+						"ProgressIndicator": "inProgress",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "SalesOrderHeaders",
+						"Service": "/Molinos2/Services/MolinosTest_v2.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{LifeCycleStatusName}",
+						"Subhead": "{CreatedAt}",
+						"Footnote": "{CustomerId}",
+						"Description": "{CurrencyCode}",
+						"StatusText": "{GrossAmount}",
+						"SubstatusText": "{LifeCycleStatus}",
+						"DetailImageIsCircular": false,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/Molinos2/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Detail.action"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderHeaders_List",
+	"Caption": "SalesOrderHeaders",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}
