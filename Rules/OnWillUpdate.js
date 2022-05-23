@@ -7,7 +7,6 @@ export default function OnWillUpdate(clientAPI) {
         if (result.data) {
             return clientAPI.executeAction('/Molinos2/Actions/Service/CloseOffline.action').then(
                 (success) => Promise.resolve(success),
-                Console.log(success, "Gatoooooooooooooooooooooooooooooooooooooooooooooooo"),
                 (failure) => Promise.reject('Offline Odata Close Failed ' + failure));
         } else {
             return Promise.reject('User Deferred');

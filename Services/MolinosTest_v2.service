@@ -1,9 +1,6 @@
 {
-    "DestinationName": "MolinosTest.v2",
-    "OfflineEnabled": true,
-    "LanguageURLParam": "",
-    "OnlineOptions": {},
-    "PathSuffix": "",
-    "SourceType": "Mobile",
-    "ServiceUrl":""
+	"DestinationName": "MolinosTest.v2",
+	"OfflineEnabled": true,
+	"SourceType": "Mobile",
+	"RestService": false
 }

@@ -1,6 +1,6 @@
 {
-    "include": [
-        "Rules/**/*",
-        ".typings/**/*"
-    ]
+	"include": [
+		"Rules/**/*",
+		".typings/**/*", "../../../../../Molinos2/Rules/Library", "../../../../../Molinos2/Rules/CalendarPage", "../../../../../Molinos2/.typings/IClientAPI.d.ts"
+	]
 }

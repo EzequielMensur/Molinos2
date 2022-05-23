@@ -8,7 +8,7 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/Molinos2/Services/MolinosTest_v2.service",
-						"EntitySet": "/Molinos2/Rules/noSincronizadosSales.js"
+						"EntitySet": "SalesOrderHeaders"
 					},
 					"_Name": "SectionObjectTable1",
 					"Visible": true,
