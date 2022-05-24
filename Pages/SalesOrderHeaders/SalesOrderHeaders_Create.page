@@ -37,8 +37,24 @@
 							}
 						},
 						{
+							"_Type": "Control.Type.FormCell.Extension",
+							"_Name": "MyExtensionControlName",
+							"Module": "MySliderModule",
+							"Control": "MySliderExtension",
+							"Class": "MySliderClass",
+							"ExtensionProperties": {
+								"MaxValue": 200,
+								"MinValue": 10,
+								"Title": "GrossAmount"
+							},
+							"Height": 72,
+							"OnValueChange": "/Molinos2/Rules/SetExtensionValue.js",
+							"IsVisible": true
+						},
+						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "GrossAmount",
+							"IsVisible": true,
 							"Caption": "GrossAmount",
 							"KeyboardType": "Number"
 						},
