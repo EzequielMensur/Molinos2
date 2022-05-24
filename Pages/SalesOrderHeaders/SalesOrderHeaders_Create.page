@@ -54,7 +54,7 @@
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "GrossAmount",
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "GrossAmount",
 							"KeyboardType": "Number"
 						},
