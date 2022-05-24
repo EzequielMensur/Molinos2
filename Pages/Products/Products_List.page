@@ -1,35 +1,41 @@
 {
-	"Caption": "Products",
-	"ActionBar": {
-		"Items": [
-			{
-				"OnPress": "/Molinos2/Actions/Products/NavToProducts_Create.action",
-				"Position": "Right",
-				"SystemItem": "Add"
-			}
-		]
-	},
 	"Controls": [
 		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
 			"Sections": [
 				{
 					"Header": {
+						"_Name": "SectionHeader0",
 						"UseTopPadding": false
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/Molinos2/Services/MolinosTest_v2.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"AccessoryType": "disclosureIndicator",
+						"Title": "{Name}",
+						"Subhead": "{Category}",
+						"Footnote": "{CurrencyCode}",
 						"Description": "{CategoryName}",
+						"StatusText": "{DimensionDepth}",
+						"SubstatusText": "{DimensionHeight}",
 						"DetailImage": "/Molinos2/Services/MolinosTest_v2.service/{@odata.readLink}/$value",
 						"DetailImageIsCircular": false,
-						"Icons": [],
-						"OnPress": "/Molinos2/Actions/Products/NavToProducts_Detail.action",
-						"StatusImage": "",
-						"Title": "{Name}",
-						"Footnote": "{CurrencyCode}",
 						"PreserveIconStackSpacing": false,
-						"StatusText": "{DimensionDepth}",
-						"Subhead": "{Category}",
-						"SubstatusText": "{DimensionHeight}"
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/Molinos2/Actions/Products/NavToProducts_Detail.action",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						}
 					},
 					"Search": {
 						"Enabled": true,
@@ -41,24 +47,30 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Loading more items, please wait..."
-					},
-					"Target": {
-						"EntitySet": "Products",
-						"Service": "/Molinos2/Services/MolinosTest_v2.service",
-						"QueryOptions": ""
-					},
-					"_Type": "Section.Type.ObjectTable"
+					}
 				}
 			],
 			"LoadingIndicator": {
 				"Enabled": true,
 				"Text": "Loading, please wait..."
-			},
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable"
+			}
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Products_List",
-	"PrefersLargeCaption": true
+	"Caption": "Products",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/Molinos2/Actions/Products/NavToProducts_Create.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }
