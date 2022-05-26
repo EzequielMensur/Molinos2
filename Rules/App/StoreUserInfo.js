@@ -7,6 +7,9 @@ export default function StoreUserInfo(clientAPI) {
     if (platform.isIOS || platform.isAndroid) {
         let appSettings = clientAPI.nativescript.appSettingsModule;
         let appId = clientAPI.evaluateTargetPath('#Application/#ClientData/#Property:MobileServiceAppId');
+        let userInfoUrl = `/mobileservices/application/${appId}/roleservice/application/${appId}/v2/Me`;
+        let params = { 'method': 'GET' };
+        const userInfo = JSON.parse(r.content.toString());
         if (appSettings.hasKey(`${appId}-UserName`)) {
             // Si ya existe la informacion del usuario, no la recupera nuevamente.
             return Promise.resolve();   
