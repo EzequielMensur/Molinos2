@@ -24,6 +24,18 @@ export default function StoreUserInfo(clientAPI) {
         } else {
             let userInfoUrl = `/mobileservices/application/${appId}/roleservice/application/${appId}/v2/Me`;
             let params = { 'method': 'GET' };
+            clientAPI.sendRequest(userInfoUrl, params).then(r => {
+                if (r && r.statusCode === 200 && r.content) {
+                    const userInfo = JSON.parse(r.content.toString());
+                    alert(userInfo)
+                    appSettings.setString(`${appId}-UserId`,userInfo.id);
+                    appSettings.setString(`${appId}-UserName`,userInfo.userName);
+                    appSettings.setString(`${appId}-UserGivenName`,userInfo.name.givenName);
+                    appSettings.setString(`${appId}-UserFamilyName`,userInfo.name.familyName);
+                    appSettings.setString(`${appId}-UserEmail`,userInfo.emails[0].value);
+                    appSettings.setString(`${appId}-UserFullName`,`${userInfo.name.givenName} ${userInfo.name.familyName}`);
+                    return Promise.resolve();
+                } })
             return clientAPI.sendRequest(userInfoUrl, params).then(r => {
                 if (r && r.statusCode === 200 && r.content) {
                     const userInfo = JSON.parse(r.content.toString());
