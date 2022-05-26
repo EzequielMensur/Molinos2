@@ -20,6 +20,3 @@ export default function StoreUserInfo(clientAPI) {
                 console.log(error.toString());
             });                
         }
-    } else { 
-        return Promise.resolve();
-    }}
