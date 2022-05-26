@@ -1,8 +1,8 @@
 export default function StoreUserInfo(clientAPI) {
     let platform = clientAPI.nativescript.platformModule;
-    let appSettings = clientAPI.nativescript.appSettingsModule;
-            let appId = clientAPI.evaluateTargetPath('#Application/#ClientData/#Property:MobileServiceAppId');
-            let userInfoUrl = `/mobileservices/application/${appId}/`;
+    
+
+            let userInfoUrl = `/mobileservices/application/${appId}/roleservice/application/${appId}/v2/Me`;
             let params = { 'method': 'GET' };
             return clientAPI.sendRequest(userInfoUrl, params).then(r => {
                 if (r && r.statusCode === 200 && r.content) {
@@ -19,4 +19,7 @@ export default function StoreUserInfo(clientAPI) {
             (error) => {
                 console.log(error.toString());
             });                
-}
+        }
+    } else { 
+        return Promise.resolve();
+    }}
