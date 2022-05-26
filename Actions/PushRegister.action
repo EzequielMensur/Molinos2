@@ -1,5 +1,0 @@
-{
-	"_Type": "Action.Type.PushNotificationRegister",
-	"OnFailure": "/Molinos2/Actions/PushRegisterFailureMessage.action",
-	"OnSuccess": "/Molinos2/Actions/PushRegisterSuccessMessage.action"
-}

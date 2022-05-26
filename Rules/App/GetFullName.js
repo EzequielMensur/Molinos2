@@ -6,6 +6,6 @@ export default function GetUserFullName(clientAPI) {
 		
 		return appSettings.getString(`${appId}-UserFullName`);
 	} else {
-		return '';
+		return 'No aparecio el nombre';
 	}
 }
