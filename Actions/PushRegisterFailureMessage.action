@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Push Notification didn't register",
+	"Title": "Failure",
+	"OKCaption": "OK"
+}
