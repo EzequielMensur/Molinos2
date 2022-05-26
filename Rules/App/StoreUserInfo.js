@@ -20,11 +20,11 @@ export default function StoreUserInfo(clientAPI) {
             return Promise.resolve();                 
         } else {
             let userInfoUrl = `/mobileservices/application/${appId}/roleservice/application/${appId}/v2/Me`;
-            alert(userInfoUrl)
             let params = { 'method': 'GET' };
             return clientAPI.sendRequest(userInfoUrl, params).then(r => {
                 if (r && r.statusCode === 200 && r.content) {
                     const userInfo = JSON.parse(r.content.toString());
+                    alert(userInfo)
                     appSettings.setString(`${appId}-UserId`,userInfo.id);
                     appSettings.setString(`${appId}-UserName`,userInfo.userName);
                     appSettings.setString(`${appId}-UserGivenName`,userInfo.name.givenName);

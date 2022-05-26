@@ -19,7 +19,9 @@
 							"PageToOpen": "/Molinos2/Pages/Main.page",
 							"_Name": "SideDrawerSection0Item0",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Sales",
@@ -27,7 +29,9 @@
 							"OnPress": "/Molinos2/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"_Name": "SideDrawerSection0Item1",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Purchases",
@@ -35,7 +39,9 @@
 							"OnPress": "/Molinos2/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
 							"_Name": "SideDrawerSection0Item2",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Calendar",
@@ -43,7 +49,9 @@
 							"OnPress": "/Molinos2/Actions/NavToCalendar.action",
 							"_Name": "SideDrawerSection0Item3",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Customers",
@@ -51,7 +59,19 @@
 							"PageToOpen": "/Molinos2/Pages/Customers/Customers_List.page",
 							"_Name": "SideDrawerSection0Item4",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
+						},
+						{
+							"Title": "TestRespuestaIdCliente",
+							"Image": "sap-icon://action",
+							"OnPress": "/Molinos2/Rules/App/StoreUserInfo.js",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						}
 					],
 					"Caption": "App",
