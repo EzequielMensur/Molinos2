@@ -13,8 +13,7 @@
 					"Visible": true,
 					"Image": "/Molinos2/Images/molinos.png",
 					"Alignment": "center",
-					"ContentMode": "ScaleAspectFit",
-					"OnPress": "/Molinos2/Rules/Hi.js"
+					"ContentMode": "ScaleAspectFit"
 				}
 			]
 		}
@@ -22,5 +21,6 @@
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Main",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/Molinos2/Rules/Hi.js"
 }

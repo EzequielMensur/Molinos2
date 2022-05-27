@@ -118,11 +118,14 @@
 			],
 			"_Type": "Control.Type.SideDrawer",
 			"_Name": "Molinos App",
+			"DrawerButton": "/Molinos2/Rules/Hi.js",
 			"AlwaysShowDrawerButton": false,
 			"ClearHistory": false
 		}
 	],
 	"_Type": "Page",
 	"_Name": "SideDrawer",
-	"Caption": "SideDrawer"
+	"Caption": "SideDrawer",
+	"OnLoaded": "/Molinos2/Rules/Hi.js",
+	"OnUnloaded": "/Molinos2/Rules/Hi.js"
 }
