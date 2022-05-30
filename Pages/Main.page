@@ -14,6 +14,22 @@
 					"Image": "/Molinos2/Images/molinos.png",
 					"Alignment": "center",
 					"ContentMode": "ScaleAspectFit"
+				},
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "Introduccion",
+						"FooterVisible": false
+					},
+					"Height": 300,
+					"Module": "VideoPlayerControl",
+					"Control": "VideoPlayerControl",
+					"Class": "VideoPlayerControl",
+					"ExtensionProperties": {
+						"videoURL": "www.youtube.com/watch?v=2bBxtV-7t5Y"
+					}
 				}
 			]
 		}
