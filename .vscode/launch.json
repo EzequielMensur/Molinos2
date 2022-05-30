@@ -3,6 +3,15 @@
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
   "configurations": [
+  {
+    "name": "MDK Attach on Android",
+    "type": "MDK",
+    "appRoot": "C:/Users/ezequiel.mensur/Desktop/proyectos/MDK_SDK_6_1_3_002_Notarized/MDKClient_SDK/MDKCOPIAMOLINAS",
+    "request": "attach",
+    "platform": "android",
+    "sourceMaps": true,
+    "watch": false
+  },
     {
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
