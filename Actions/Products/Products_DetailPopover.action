@@ -5,7 +5,7 @@
         },
         {
             "Title": "Delete",
-            "OnPress": "/Molinos2/Rules/Products/Products_DeleteConfirmation.js"
+            "OnPress": "/Molinos2/Rules/Filter/Products_DeleteConfirmation.js"
         }
     ],
     "_Type": "Action.Type.PopoverMenu"

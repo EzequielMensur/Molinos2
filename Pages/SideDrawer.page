@@ -34,7 +34,9 @@
 							"OnPress": "/Molinos2/Actions/SalesOrderHeaders/NavToSalesOrderHeaders_List.action",
 							"_Name": "SideDrawerSection1Item1",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Purchases",
@@ -42,7 +44,9 @@
 							"OnPress": "/Molinos2/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action",
 							"_Name": "SideDrawerSection1Item2",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Calendar",
@@ -50,7 +54,9 @@
 							"OnPress": "/Molinos2/Actions/NavToCalendar.action",
 							"_Name": "SideDrawerSection1Item3",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "Customers",
@@ -58,7 +64,9 @@
 							"PageToOpen": "/Molinos2/Pages/Customers/Customers_List.page",
 							"_Name": "SideDrawerSection1Item4",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "TestRespuestaIdCliente",
@@ -66,7 +74,9 @@
 							"OnPress": "/Molinos2/Rules/App/StoreUserInfo.js",
 							"_Name": "SideDrawerSection1Item5",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						},
 						{
 							"Title": "New Customer",
@@ -74,7 +84,19 @@
 							"PageToOpen": "/Molinos2/Pages/Customers/Customers_Create.page",
 							"_Name": "SideDrawerSection1Item6",
 							"Visible": true,
-							"TextAlignment": "left"
+							"TextAlignment": "left",
+							"Styles": {
+							}
+						},
+						{
+							"Title": "Products",
+							"Image": "sap-icon://action",
+							"PageToOpen": "/Molinos2/Pages/ProductsMain.page",
+							"_Name": "SideDrawerSection1Item0",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {
+							}
 						}
 					],
 					"Caption": "App",

@@ -1,6 +1,6 @@
 {
-    "Message": "Delete entity failure - {#ActionResults:delete/error}",
-    "Duration": 7,
-    "Animated": true,
-    "_Type": "Action.Type.BannerMessage"
+	"_Type": "Action.Type.BannerMessage",
+	"Message": "{#ActionResults:delete/error}",
+	"Duration": 7,
+	"Animated": true
 }

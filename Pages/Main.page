@@ -5,6 +5,27 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true,
+						"Caption": "Video"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "Introduccion",
+						"FooterVisible": false
+					},
+					"Height": 250,
+					"Module": "VideoPlayerControl",
+					"Control": "VideoPlayerControl",
+					"Class": "VideoPlayerControl",
+					"ExtensionProperties": {
+						"videoURL": "https://web.law.duke.edu/cspd/contest/videos/Framed-Contest_Documentaries-and-You.mp4"
+					}
+				},
+				{
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -14,22 +35,6 @@
 					"Image": "/Molinos2/Images/molinos.png",
 					"Alignment": "center",
 					"ContentMode": "ScaleAspectFit"
-				},
-				{
-					"_Type": "Section.Type.Extension",
-					"_Name": "SectionExtension0",
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "Introduccion",
-						"FooterVisible": false
-					},
-					"Height": 300,
-					"Module": "VideoPlayerControl",
-					"Control": "VideoPlayerControl",
-					"Class": "VideoPlayerControl",
-					"ExtensionProperties": {
-						"videoURL": "www.youtube.com/watch?v=rCUHDvMYqlM"
-					}
 				}
 			]
 		}
