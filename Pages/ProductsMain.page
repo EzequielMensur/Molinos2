@@ -14,7 +14,7 @@
 						"ActivityItems": [
 							{
 								"ActivityType": "Message",
-								"ActivityValue": "",
+								"ActivityValue": "/Molinos2/Rules/FullScreen/HeaderFullScreen.js",
 								"_Name": "SectionProfileHeader0ActivityItem1"
 							}
 						]

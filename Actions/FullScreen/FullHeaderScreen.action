@@ -3,5 +3,8 @@
 	"PageToOpen": "/Molinos2/Pages/FullScreen/HeaderFullScreen.page",
 	"ModalPage": true,
 	"ModalPageFullscreen": true,
-	"NavigationType": "Cross"
+	"NavigationType": "Inner",
+	"Transition": {
+		"Curve": "EaseOut"
+	}
 }
