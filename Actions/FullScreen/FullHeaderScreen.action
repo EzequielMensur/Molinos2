@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/Molinos2/Pages/FullScreen/HeaderFullScreen.page",
+	"ModalPage": true,
+	"ModalPageFullscreen": true,
+	"NavigationType": "Cross"
+}

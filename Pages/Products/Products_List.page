@@ -106,14 +106,6 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"_Name": "ActionBarItem1",
-				"Caption": "Select",
-				"Position": "Right",
-				"IsIconCircular": false,
-				"Visible": true,
-				"OnPress": "/Molinos2/Rules/MultipleSelecter/SetSelectionMode.js"
-			},
-			{
 				"_Name": "ActionBarItem2",
 				"Caption": "Item",
 				"SystemItem": "Cancel",
@@ -121,6 +113,14 @@
 				"IsIconCircular": false,
 				"Visible": false,
 				"OnPress": "/Molinos2/Rules/MultipleSelecter/CancelSelectionMode.js"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Select",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Molinos2/Rules/MultipleSelecter/SetSelectionMode.js"
 			},
 			{
 				"_Name": "ActionBarItem3",

@@ -2,6 +2,6 @@
 	"_Type": "Action.Type.Message",
 	"Message": "$(L,ConfirmDelete)",
 	"OKCaption": "$(L,YesCaption)",
-	"CancelCaption": "$(L,NoCaption)",
-	"OnOK": "/Molinos2/Actions/SalesOrderHeaders/SalesOrderHeaders_DeleteEntity.action"
+	"OnOK": "/Molinos2/Actions/Products/Products_DeleteEntity.action",
+	"CancelCaption": "$(L,NoCaption)"
 }

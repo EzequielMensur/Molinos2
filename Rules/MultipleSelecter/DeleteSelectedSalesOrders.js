@@ -35,7 +35,7 @@ export default async function DeleteSelectedProducts(context) {
 		for (var i = 0; selectedItems && i < selectedItems.length; i++ ) {
 			var selectedItem = selectedItems[i];
 			await context.executeAction({
-				"Name": "/Molinos2/Actions/SalesOrderHeaders/SalesOrderHeaders_DeleteEntity.action",
+				"Name": "/Molinos2/Actions/Products/Products_DeleteEntity.action",
 				"Properties":{
 					"Target": {
 						"ReadLink" : selectedItem.binding["@odata.readLink"]

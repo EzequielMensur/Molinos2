@@ -5,6 +5,25 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"ProfileHeader": {
+						"DetailImage": "res://contact.png",
+						"DetailImageIsCircular": true,
+						"Headline": "Headline",
+						"Subheadline": "Subheadline",
+						"Description": "Description",
+						"ActivityItems": [
+							{
+								"ActivityType": "Message",
+								"ActivityValue": "",
+								"_Name": "SectionProfileHeader0ActivityItem1"
+							}
+						]
+					},
+					"_Type": "Section.Type.ProfileHeader",
+					"_Name": "SectionProfileHeader0",
+					"Visible": true
+				},
+				{
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
 					"EmptySection": {
@@ -42,6 +61,7 @@
 	"_Type": "Page",
 	"_Name": "Main",
 	"Caption": "Persistent Filters",
+	"PrefersLargeCaption": true,
 	"ToolBar": {
 		"Items": [
 			{

@@ -1,0 +1,12 @@
+{
+	"_Type": "Page",
+	"_Name": "HeaderFullScreen",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Caption": "HeaderFullScreen",
+	"PrefersLargeCaption": true
+}
