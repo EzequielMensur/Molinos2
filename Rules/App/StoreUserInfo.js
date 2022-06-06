@@ -1,7 +1,25 @@
 export default function StoreUserInfo(clientAPI) {
     let platform = clientAPI.nativescript.platformModule;
+    let userInfoUrl = `/mobileservices/application/${appId}/roleservice/application/${appId}/v2/Me`;
+    let params = { 'method': 'GET' };
+    return clientAPI.sendRequest(userInfoUrl, params).then(r => {
+        if (r && r.statusCode === 200 && r.content) {
+            const userInfo = JSON.parse(r.content.toString());
+            appSettings.setString(`${appId}-UserId`,userInfo.id);
+            appSettings.setString(`${appId}-UserName`,userInfo.userName);
+            appSettings.setString(`${appId}-UserGivenName`,userInfo.name.givenName);
+            appSettings.setString(`${appId}-UserFamilyName`,userInfo.name.familyName);
+            appSettings.setString(`${appId}-UserEmail`,userInfo.emails[0].value);
+            appSettings.setString(`${appId}-UserFullName`,`${userInfo.name.givenName} ${userInfo.name.familyName}`);
+            return Promise.resolve();
+        }
+    },
+    (error) => {
+        console.log(error.toString());
+    });  
+}             
     
-    if (platform.isIOS || platform.isAndroid) {
+    /*if (platform.isIOS || platform.isAndroid) {
         let appSettings = clientAPI.nativescript.appSettingsModule;
         let appId = clientAPI.evaluateTargetPath('#Application/#ClientData/#Property:MobileServiceAppId');
         if (appSettings.hasKey(`${appId}-UserName`)) {
@@ -15,26 +33,10 @@ export default function StoreUserInfo(clientAPI) {
             appSettings.setString(`${appId}-UserEmail`,'mobileservicesclient@sap.com');
             appSettings.setString(`${appId}-UserFullName`,`Demo User`);
             return Promise.resolve();                 
-        } else {
-            let userInfoUrl = `/mobileservices/application/${appId}/roleservice/application/${appId}/v2/Me`;
-            let params = { 'method': 'GET' };
-            return clientAPI.sendRequest(userInfoUrl, params).then(r => {
-                if (r && r.statusCode === 200 && r.content) {
-                    const userInfo = JSON.parse(r.content.toString());
-                    appSettings.setString(`${appId}-UserId`,userInfo.id);
-                    appSettings.setString(`${appId}-UserName`,userInfo.userName);
-                    appSettings.setString(`${appId}-UserGivenName`,userInfo.name.givenName);
-                    appSettings.setString(`${appId}-UserFamilyName`,userInfo.name.familyName);
-                    appSettings.setString(`${appId}-UserEmail`,userInfo.emails[0].value);
-                    appSettings.setString(`${appId}-UserFullName`,`${userInfo.name.givenName} ${userInfo.name.familyName}`);
-                    return Promise.resolve();
-                }
-            },
-            (error) => {
-                console.log(error.toString());
-            });                
+        } else{ 
         }
     } else { 
         return Promise.resolve();
     }
 }
+*/
