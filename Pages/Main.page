@@ -6,6 +6,17 @@
 			"Sections": [
 				{
 					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Module": "TextView",
+					"Control": "TextView",
+					"Class": "TextView"
+				},
+				{
+					"_Type": "Section.Type.Extension",
 					"_Name": "SectionExtension0",
 					"Header": {
 						"_Name": "SectionHeader0",
@@ -24,6 +35,17 @@
 					"ExtensionProperties": {
 						"videoURL": "https://web.law.duke.edu/cspd/contest/videos/Framed-Contest_Documentaries-and-You.mp4"
 					}
+				},
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Module": "",
+					"Control": "",
+					"Class": ""
 				},
 				{
 					"EmptySection": {
